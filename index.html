@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex items-center justify-center h-screen">
+    
+
+    <div class="flex gap-1 flex-col">
+        <form id="form" action="#" method="post" class="relative flex gap-[20px] rounded-lg w-64 overflow-hidden">
+            <input id="input"
+            type="number"
+            class="bg-transparent ring-0 outline-purple-500 border border-neutral-500 text-neutral-900 placeholder-violet-700 text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block w-full p-2.5"
+            placeholder="amount"/>
+    
+            <select class="outline-purple-500" id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+    
+            <select id="to-currency" class="outline-purple-500">
+                <option value="UZS">UZS</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </form>
+    
+        <button id="convert"
+        class="bg-violet-500 text-neutral-50 p-2 rounded-lg hover:bg-violet-400">
+            Convert
+        </button>
+
+        <div id="resultContainer"></div>
+    </div>
+    
+    
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
